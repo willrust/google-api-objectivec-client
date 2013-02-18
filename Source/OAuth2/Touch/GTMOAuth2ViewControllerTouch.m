@@ -391,7 +391,8 @@ finishedWithAuth:(GTMOAuth2Authentication *)auth
       } else {
         [self.navigationController popViewControllerAnimated:YES];
       }
-      self.view.hidden = YES;
+            // Commented out to prevent black screen during navigationController dismiss - Rust
+            //self.view.hidden = YES;
     }
   }
 }
